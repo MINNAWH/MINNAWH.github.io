@@ -77,34 +77,53 @@
             max-width: 30px; /* Adjust size of the logo image */
             margin: auto; /* Center the logo image horizontally */
         }
-        
-        .contact-container {
-    font-family: 'Andalus';
-    font-size: 20px;
-    max-width: 300%; /* Adjusted width for better responsiveness */
-    margin: 20px auto;
-    background-color: pink;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
 
-        .contact-form {
+        .contact-wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .contact-form form {
-            width: 50%;
+        .contact-container {
+            font-family: 'Andalus';
+            font-size: 20px;
+            max-width: 80%; /* Adjusted width for better responsiveness */
+            margin: 20px auto;
+            background-color: pink;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin: 0 auto;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .social-link {
+            font-family: 'Andalus';
+            text-decoration: none;
+            color: purple;
+            font-size: 20px;
+            background-color: #fff0f5;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .social-link:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
         }
 
         input,
         textarea,
-        button{
+        button {
             width: 80%;
             padding: 10px;
             margin-bottom: 20px;
@@ -136,43 +155,10 @@
             padding: 5px 0 10px 0;
         }
 
-        .social-link {
-            font-family: 'Andalus';
-            text-decoration: none;
-            color: purple;
-            font-size: 20px;
-            background-color: #fff0f5;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            margin-bottom:10px;
-            margin-right:120px;
-            margin-left:99px;
-            margin: 40 130px:
-            border-radius: 10px;
-        }
-
-        .social-link:hover {
-            background-color: #45a049;
-            transform: scale(1.1);
-        }
-
-        input,
-        textarea,
-        button {
-            width: 80%;
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-
-        button {
-            background-color: #fff0f5;
-            color: black;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
+        @media only screen and (max-width: 768px) {
+            .contact-container {
+                max-width: 100%; /* Adjusted width for better responsiveness on smaller screens */
+            }
         }
     </style>
 </head>
@@ -193,6 +179,23 @@
         </div>
     </header>
 
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            <p>Let's connect! Reach out to me on social media:</p>
+            <div class="social-links">
+                <a href="https://instagram.com/azmnnawhp?igshid=NGVhN2U2NjQ0Yg==" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <img src="tt.png" alt="Instagram Logo" class="logo-img"> Instagram
+                </a>
+                <a href="https://wa.me/182674382" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <img src="ws.png" alt="WhatsApp Logo" class="logo-img"> WhatsApp
+                </a>
+                <a href="https://www.facebook.com/hazwazieyhaziq?mibextid=LQQJ4d" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <img src="fb.png" alt="Facebook Logo" class="logo-img"> Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="contact-form">
         <form action="#" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -201,19 +204,6 @@
             <button type="submit">Send Message</button>
         </form>
     </div>
+</body>
 
-    <div class="contact-container">
-        <p>Let's connect! Reach out to me on social media:</p>
-        <div class="social-links">
-            <a href="https://instagram.com/azmnnawhp?igshid=NGVhN2U2NjQ0Yg==" class="social-link" target="_blank" rel="noopener noreferrer">
-                <img src="tt.png" alt="Instagram Logo" class="logo-img"> Instagram
-            </a>
-            <a href="https://wa.me/182674382" class="social-link" target="_blank" rel="noopener noreferrer">
-                <img src="ws.png" alt="WhatsApp Logo" class="logo-img"> WhatsApp
-            </a>
-            <a href="https://www.facebook.com/hazwazieyhaziq?mibextid=LQQJ4d" class="social-link" target="_blank" rel="noopener noreferrer">
-                <img src="fb.png" alt="Facebook Logo" class="logo-img"> Facebook
-            </a>
-        </div>
-    </div>
-</body
+</html>
