@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
 <style>
 img {
     /center the image/
@@ -10,59 +7,25 @@ img {
     
     /set image size/
     width: 270;
-    height: 250px;      
+    height: 250px;
+    
+    /create some border with background color/
+    border-radius: 10px;
+    background: grey;
+    padding: 15px;
+    
+    /create some animation/
+    animation-name: myanimate; /load myanimate animation/
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+  
 }
-    button {
-            background-color: #fff0f5;
-            color: black;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-	.textarea:border{
-         background-color:white
-      }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: lavenderblush;
+/myanimate animation - change color from pink to purple/
+@keyframes myanimate{
+  from {background-color: pink;}
+  to {background-color: purple;}
 }
-
-li {
-float: left;
-}
-li a {
-  display: block;
-  color: purple;
-  text-align: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left:16px;
-  padding-right:16px;
-  text-decoration: none;
-}
-li a:hover:not(.active) {
-  background-color: red;
-}
-.active {
-  background-color: lime;
-}
-        button {
-            background-color: #fff0f5;
-            color: black;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-
-}
-
 table {
     width: 90%;
     margin-top:50px;
@@ -124,7 +87,7 @@ h1 {
 .container {
   position: relative;
 }
-	
+
 h4 {
   font-family: 'Algerian';   
   font-size: 15px;    
@@ -157,14 +120,23 @@ h4 {
   font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
+}
 
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
 li {
 float: left;
 }
 li a {
   display: block;
-  color: purple;
+  color: white;
   text-align: center;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -180,45 +152,48 @@ li a:hover:not(.active) {
   background-color: lime;
 }
 body {
- background-image: url("cl.jpg"); 
- background-size: cover;
-background-position: center;
- background-repeat: no-repeat;
-         margin: 0;
-        padding: 0;
-        font-family: 'Arial', sans-serif;
-            
+            background-image: url("cl.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
         }
 </style>
-</body>
 <title>Hazminna Wahap Portfolio</title>
-<body>
+
 <nav>
   <ul>
+    <ul>
  
     <li class='active'><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/index.html">Home</a></li>
  
     <li class=> <a href="https://MINNAWH.github.io/Personal-Portfolio-Website/about.html">About Me</a></li>
     <li class=><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/project.html">Project</a></li>
     <li class=><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/contactme.html">Contact Me</a></li>
-  
+
     <br>
     <br>
   </ul>
 </nav>
+
 <h1>Hazminna Wahap Website</h1>
- </br>
+<   </br>
     </br>
 <img src="minna.jpg">
 
 <br>
 <br>
 <br>
-<p>"PATIENCE, PERSISTENCE AND PERSPIRATION MAKE AN UNBEATABLE COMBINATION FOR SUCCESS."</p>
+<p>"PATIENCE, PERSISTENCE AND PERSPIRATION MAKE AN UNBEATABLE COMBINATION FOR SUCCESS."</p> 
 </br>
 </br>
-<nav>
-  <ul>
-<h4> 
-<a href="https://MINNAWH.github.io/Personal-Portfolio-Website/about.html" class="cta-button">Discover More About Me</a>
+	<nav>
+		<ul>
+			<h4>
+				<a href=""https://MINNAWH.github.io/Personal-Portfolio-Website/about.html" class="cta-button">Discover More About Me</a>
 </nav>
+			</h4>
+		</ul>
+	</nav>
