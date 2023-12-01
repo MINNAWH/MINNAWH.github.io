@@ -20,7 +20,9 @@
             margin: 0 auto;
             padding: 20px;
         }
-
+body {
+            overflow: hidden; /* Prevents scrollbars from appearing during the animation */
+        }
         img {
             max-width: 100%;
             height: auto;
@@ -130,7 +132,7 @@
         }
 
        img::before {
-            content: "🌸"; /* You can replace this with an image of a flower if you have one */
+            content: "flr.png"; /* You can replace this with an image of a flower if you have one */
             position: absolute;
             top: -20px; /* Adjust the starting position of the flowers */
             left: 50%;
