@@ -105,6 +105,7 @@ li a:hover:not(.active) {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    animation: fadeIn 2s ease-in-out infinite; /* Make the animation infinite */
     
     /*set image size*/
     width: 300px;
@@ -124,6 +125,15 @@ li a:hover:not(.active) {
 .active {
   background-color: lime;
 }
+	     @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+	    
     </style>
  <ul>
     <li><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/index.html">Home</a></li>
