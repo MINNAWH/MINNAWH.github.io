@@ -27,7 +27,7 @@
             display: block;
             margin: 0 auto;
            position: relative;
-            animation: fadeIn 2s ease-in-out infinite, shine 2s ease-in-out infinite; /* Make both animations infinite */
+            animation: fadeIn 3s ease-in-out infinite, shine 2s ease-in-out infinite; /* Make both animations infinite */
         }
        
         table {
@@ -122,10 +122,10 @@
          }
          @keyframes shine {
             0% {
-                background-position: -100% -100%;
+                background-position: -2000% 0;
             }
             100% {
-                background-position: 200% 200%;
+                background-position: 200% 0%;
             }
         }
         img::before {
@@ -135,8 +135,8 @@
             right: 0;
             bottom: 0;
             left: 0;
-            background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), transparent, rgba(255, 255, 255, 0.8));
-            background-size: 200% 200%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+            background-size: 200% 100%;
             pointer-events: none;
             animation: shine 2s ease-in-out infinite; /* Make the shine animation infinite */
         }
