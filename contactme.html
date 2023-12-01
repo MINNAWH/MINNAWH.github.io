@@ -7,7 +7,7 @@
     <title>Contact Me</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
@@ -17,13 +17,13 @@
             background-color: #fff0f5;
             color: black;
             text-align: center;
-            padding: 10px;
+            padding: 2px;
         }
 
         .contact-container {
-            max-width: 400px;
+            max-width: 300px;
             margin: 20px auto;
-            background-color: pink;
+            background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -65,6 +65,39 @@
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #fff0f5;
+            color: white;
+            text-align: center;
+            padding: 0.0001em 0;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .logo-img {
+            max-width: 30px;
+            margin-bottom: 5px;
+        }
+
+        .contact-container {
+            font-family: 'Andalus';
+            font-size: 20px;
+            max-width: 80%;
+            margin: 20px auto;
+            background-color: pink;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         .contact-form {
@@ -109,6 +142,7 @@
             text-shadow: 0.1em;
             font-weight: 95;
             color: darkgoldenrod;
+            margin: 10px;
             padding: 5px 0 10px 0;
         }
 
@@ -160,12 +194,22 @@
     </nav>
 
     <header>
-        <h1>"Feel free to ask any questions or let me know if you're interested. I'm here to help!"</h1>
+        <div class="logo-container">
+            <h1>"Feel free to ask any questions or let me know if you're interested. I'm here to help!"</h1>
+        </div>
     </header>
+
+    <div class="contact-form">
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
     <div class="contact-container">
         <p>Let's connect! Reach out to me on social media:</p>
-
         <div class="social-links">
             <a href="https://instagram.com/azmnnawhp?igshid=NGVhN2U2NjQ0Yg==" class="social-link" target="_blank" rel="noopener noreferrer">
                 <img src="tt.png" alt="Instagram Logo" class="logo-img"> Instagram
@@ -177,16 +221,5 @@
                 <img src="fb.png" alt="Facebook Logo" class="logo-img"> Facebook
             </a>
         </div>
-
-        <div class="contact-form">
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
     </div>
-</body>
-
-</html>
+</body
