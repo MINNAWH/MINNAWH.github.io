@@ -128,6 +128,18 @@
                 background-position: 200% 200%;
             }
         }
+        img::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), transparent, rgba(255, 255, 255, 0.8));
+            background-size: 200% 200%;
+            pointer-events: none;
+            animation: shine 2s ease-in-out infinite; /* Make the shine animation infinite */
+        }
 
     </style>
     <title>Hazminna Wahap Portfolio</title>
