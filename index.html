@@ -104,29 +104,69 @@ p {
   background-color:#fff0f5;
 }
 
-h1 {
-  font-family: 'Algerian';   
-  font-size: 40px;    
-  line-height: 42px;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 1px white, 0 2px #8a2be2;
-  font-weight: 500;  
-  color: blueviolet;
-  margin-left: 300px;
-  margin-right: 300px;
-  padding: 15px 0 15px 0;
-  box-shadow:
-        inset 0 0 0 1px rgba(53,86,129, 0.4),
-        inset 0 0 5px rgba(53,86,129, 0.5),
-        inset -285px 0 35px white;
-  border-radius: 0 10px 0 10px;
-
-}
 .container {
   position: relative;
 }
-
+	@import url(https://fonts.googleapis.com/css?family=Concert+One);
+	h1{	
+		animation:glow 5s
+		ease-in-out infinite;
+	}
+	figure{
+	animation:wobble 5s
+	   ease-in-out infinite;
+	transform-origin:;
+		transform-style:preserve-3d;
+	}
+	0%,100%{ transform:
+	rotate3d(1,1,0,40deg)
+		;}
+	25%{transform:rotate3d
+ 	 (-1,-1,0,40deg);}
+	50%{transform):rotate3d
+	  (-1,-1,0,40deg);}
+	75%{transform):rotate3d
+	  (-1,-1,0,40deg);}
+	}
+	h1{
+	 width:50%;
+	 font-size: 40px;    
+ 	 line-height: 42px;
+ 	 text-align: center;
+	 
+	 line-height:5;
+	 font:70 5em 'Algerian',san-serif;
+	 text-transform:uppercase;
+	 position:absolute;
+	 color:#0a0a0a;
+	 margin-left: 300px;
+ 	 margin-right: 300px;
+ 	 padding: 15px 0 15px 0;
+	}
+	@keyframes glow{
+	  0%,100%{ text-shadow:0 0 30px red;}
+	  25%{ text-shadow:0 0 30px orange;}
+	  50%{ text-shadow:0 0 30px forestgreen;}
+           75%{ text-shadow:0 0 30px cyan;}
+	{
+	h1:nth-child(2){
+	  transform:translateZ(5px);}
+		h1:nth-child(3){
+		 transform:translateZ(10px);}
+		h1:nth-child(4){
+		 transform:translateZ(15px);}
+		h1:nth-child(5){
+		 transform:translateZ(20px);}
+		h1:nth-child(6){
+		 transform:translateZ(25px);}
+		h1:nth-child(7){
+		 transform:translateZ(30px);}
+		h1:nth-child(8){
+		 transform:translateZ(35px);}
+		h1:nth-child(9){
+		 transform:translateZ(40px);}
+		h1:nth-child(10){
+		 transform:translateZ(45px);}
 h4 {
   font-family: 'Algerian';   
   font-size: 15px;    
@@ -195,6 +235,11 @@ li a:hover:not(.active) {
 </body>
 <title>Hazminna Wahap Portfolio</title>
 <body>
+		<figure>
+	   <h1>HAZMINNA WAHAP PORTFOLIO</h1>
+	   
+              </figure>
+           </body>
 <nav>
   <ul>
  
@@ -209,7 +254,6 @@ li a:hover:not(.active) {
   </ul>
 </nav>
 
-<h1>Hazminna Wahap Website</h1>
  </br>
     </br>
 <img src="minna.jpg">
