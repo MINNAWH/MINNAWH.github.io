@@ -26,21 +26,8 @@
             height: auto;
             display: block;
             margin: 0 auto;
-            position: relative;
-            animation: fadeIn 3s ease-in-out infinite, fallingFlowers 4s linear infinite; /* Make both animations infinite */
         }
-       img::before {
-            content: '';
-            position: absolute;
-            top: -20px; /* Adjust the starting position of the flowers */
-            left: 50%;
-            opacity: 0.7; /* Adjust the opacity as needed */
-            width: 20px; /* Adjust the width as needed */
-            height: 20px; /* Adjust the height as needed */
-            background: url('flr.png') no-repeat center center; /* Add the background image */
-            background-size: cover; /* Adjust as needed */
-            animation: fall 4s linear infinite; /* Add a fall animation to the flowers */
-        }
+    
         table {
             width: 100%;
             margin-top: 20px;
@@ -124,14 +111,7 @@
             background-color: lime;
         }
          
-    @keyframes fall {
-            0% {
-                transform: translateY(-100vh);
-            }
-            100% {
-                transform: translateY(100vh);
-            }
-        }
+
     </style>
     <title>Hazminna Wahap Portfolio</title>
 </head>
