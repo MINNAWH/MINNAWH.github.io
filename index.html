@@ -26,7 +26,8 @@
             height: auto;
             display: block;
             margin: 0 auto;
-            animation: fadeIn 4s ease-in-out infinite; /* Make the animation infinite */
+           position: relative;
+            animation: fadeIn 2s ease-in-out infinite, shine 2s ease-in-out infinite; /* Make both animations infinite */
         }
        
         table {
@@ -119,6 +120,15 @@
                 opacity: 1;
             }
          }
+         @keyframes shine {
+            0% {
+                background-position: -100% -100%;
+            }
+            100% {
+                background-position: 200% 200%;
+            }
+        }
+
     </style>
     <title>Hazminna Wahap Portfolio</title>
 </head>
