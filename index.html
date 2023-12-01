@@ -6,13 +6,36 @@
 
 <style>
 	/*common styles for both mobile and desktop */
+	 body {
+            background-image: url("cl.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center; /* Center text in body */
+        }
+        .container {
+            max-width: 800px; /* Adjust as needed */
+            margin: 0 auto;
+            padding: 20px;
+        }
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60% /*Make the image responsive */
-    max-width: 100px;
-	height: auto;
+            max-width: 100%; /* Make the image responsive */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            border: 1px solid black;
+            box-shadow: 10px 0 15px grey;
+        }
 
 }
 
@@ -26,6 +49,9 @@ table {
 }
 h1, p, h4 {
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 	h1 {
   font-family: 'Algerian';   
@@ -102,12 +128,6 @@ td {
     padding: 12px 15px;
 
 }
-.container {
-  max-width: 1200px;
-   margin: 0 auto;
- padding: 20px;
-}
-
 .button-container {
   text-align: center;
   margin-top: 10px; /* Adjust as needed */
@@ -152,15 +172,7 @@ li a:hover:not(.active) {
 }
 .active {
   background-color: lime;
-}
-body {
-            background-image: url("cl.jpg"); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
+
         }
 	
 </style>
