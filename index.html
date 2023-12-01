@@ -1,70 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+img {
+    /center the image/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /set image size/
+    width: 270;
+    height: 250px;  
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Add the container class and center the image within it */
-    .container {
-      text-align: center;
-    }
+table {
+    width: 90%;
+    margin-top:50px;
+    margin-left: 50px;
+    
+    font-size: 0.9em;
+    font-family: sans-serif;
+    
+    border:1px solid black; /set border width 1px and color black/
+    box-shadow: 10 0 15px grey;
+}
+th{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+td {
+    padding: 12px 15px;
+}
 
-    img {
-      /* Set image size */
-      width: 270px;
-      height: 250px;
-      margin: auto; /* Center the image horizontally */
-      display: block;
-    }
+p {  
+  font-family: 'Andalus', Algerian, sans-serif;
+  font-size: 20px;
+  line-height: 16px;
+  text-indent: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align:justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom:20px;
+  padding-top:20px;
+  border-left: 5px solid pink;
+  border-right: 5px solid pink;
+  border-above: 5px solid pink;
+  border-bottom:5px solid pink;
+  background-color:#fff0f5;
+}
 
-    /* Rest of your CSS remains unchanged */
+h1 {
+  font-family: 'Algerian';   
+  font-size: 40px;    
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px white, 0 2px #8a2be2;
+  font-weight: 500;  
+  color: blueviolet;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 15px 0 15px 0;
+  box-shadow:
+        inset 0 0 0 1px rgba(53,86,129, 0.4),
+        inset 0 0 5px rgba(53,86,129, 0.5),
+        inset -285px 0 35px white;
+  border-radius: 0 10px 0 10px;
 
-    body {
-      background-image: url("cl.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-    }
-  </style>
-  <title>Hazminna Wahap Portfolio</title>
-</head>
+}
+.container {
+  position: relative;
+}
 
-<body>
-  <nav>
+h4 {
+  font-family: 'Algerian';   
+  font-size: 15px;    
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 5px white, 0 2px #8a2be2;
+  font-weight: 300;  
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px 0 5px 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-40%);
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+li {
+float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left:16px;
+  padding-right:16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+.active {
+  background-color: lime;
+}
+body {
+            background-image: url("cl.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+</style>
+<title>Hazminna Wahap Portfolio</title>
+
+<nav>
+  <ul>
     <ul>
-      <li class='active'><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/index.html">Home</a></li>
-      <li class=> <a href="https://MINNAWH.github.io/Personal-Portfolio-Website/about.html">About Me</a></li>
-      <li class=><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/project.html">Project</a></li>
-      <li class=><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/contactme.html">Contact Me</a></li>
-      <br>
-      <br>
-    </ul>
-  </nav>
+ 
+    <li class='active'><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/index.html">Home</a></li>
+ 
+    <li class=> <a href="https://MINNAWH.github.io/Personal-Portfolio-Website/about.html">About Me</a></li>
+    <li class=><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/project.html">Project</a></li>
+    <li class=><a href="https://MINNAWH.github.io/Personal-Portfolio-Website/contactme.html">Contact Me</a></li>
 
-  <h1>Hazminna Wahap Website</h1>
+    <br>
+    <br>
+  </ul>
+</nav>
 
-  <div class="container">
-    <img src="minna.jpg">
-  </div>
+<h1>Hazminna Wahap Website</h1>
+ </br>
+    </br>
+<img src="minna.jpg">
 
-  <br>
-  <br>
-  <br>
-  <p>"PATIENCE, PERSISTENCE AND PERSPIRATION MAKE AN UNBEATABLE COMBINATION FOR SUCCESS."</p>
-  <br>
-  <br>
-
-  <nav>
-    <ul>
-      <h4>
-        <a href="https://MINNAWH.github.io/Personal-Portfolio-Website/about.html" class="cta-button">Discover More About Me</a>
-      </h4>
-    </ul>
-  </nav>
-</body>
-
-</html>
+<br>
+<br>
+<br>
+<p>"PATIENCE, PERSISTENCE AND PERSPIRATION MAKE AN UNBEATABLE COMBINATION FOR SUCCESS."</p> 
+</br>
+</br>
+	<nav>
+		<ul>
+			<h4>
+				<a href="https://MINNAWH.github.io/Personal-Portfolio-Website/about.html" class="cta-button">Discover More About Me</a>
+</nav>
+			</h4>
+		</ul>
+	</nav>
