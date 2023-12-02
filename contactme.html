@@ -127,21 +127,21 @@
         input,
         textarea,
         button {
-            width: 50%;
-            padding: 8px;
-            margin-bottom: 20px;
-            margin-left: 230px;
-        }
+           width: 80%; /* Adjusted width for better mobile and laptop layout */
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; /* Center the form elements */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
 
-        button {
-            width: 50%;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-            padding: 10px;
-            border: none;
-        }
-
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
         button:hover {
             background-color: #45a049;
         }
@@ -158,13 +158,13 @@
             margin: 10px;
             padding: 5px 0 10px 0;
         }
-
+    /* Media query for mobile responsiveness */
         @media only screen and (max-width: 768px) {
             input,
             textarea,
             button,
             .contact-container {
-                max-width: 100%; /* Adjusted width for better responsiveness on smaller screens */
+                max-width: 50%; /* Adjusted width for better responsiveness on smaller screens */
             }
         }
     </style>
