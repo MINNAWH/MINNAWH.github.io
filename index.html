@@ -60,7 +60,7 @@
              text-align: center;
     animation: bounce 1s ease-in-out infinite; /* Add animation */
         }
-        
+        /* Common styles for both mobile and dekstop */
         p {
             font-family: 'Andalus', Algerian, sans-serif;
             font-size: 20px;
@@ -137,7 +137,14 @@
         transform: translateY(-10px);
     }
 }
-
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 16px; /* Adjust the font size for mobile */
+        text-indent: 10px; /* Adjust the text-indent for mobile */
+        padding: 10px; /* Adjust the padding for mobile */
+    }
+}
     </style>
     <title>Hazminna Wahap Portfolio</title>
 </head>
